@@ -14,6 +14,7 @@
 		CF446B471FA154BA00EFAFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF446B451FA154BA00EFAFCE /* LaunchScreen.storyboard */; };
 		CF446B521FA154BA00EFAFCE /* Proximity_NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B511FA154BA00EFAFCE /* Proximity_NotificationTests.swift */; };
 		CF446B5D1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B5C1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift */; };
+		CFA46ECB1FA16DD700CDD8B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA46ECA1FA16DD700CDD8B2 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CF446B581FA154BA00EFAFCE /* Proximity_NotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proximity_NotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF446B5C1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proximity_NotificationUITests.swift; sourceTree = "<group>"; };
 		CF446B5E1FA154BA00EFAFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA46ECA1FA16DD700CDD8B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		CF446B3B1FA154BA00EFAFCE /* Proximity_Notification */ = {
 			isa = PBXGroup;
 			children = (
+				CFA46ECA1FA16DD700CDD8B2 /* Constants.swift */,
 				CF446B6A1FA154F900EFAFCE /* Application Delegate */,
 				CF446B6B1FA1552000EFAFCE /* ViewControllers */,
 				CF446B6C1FA1552F00EFAFCE /* Storyboards */,
@@ -317,6 +320,7 @@
 			files = (
 				CF446B3F1FA154BA00EFAFCE /* ViewController.swift in Sources */,
 				CF446B3D1FA154BA00EFAFCE /* AppDelegate.swift in Sources */,
+				CFA46ECB1FA16DD700CDD8B2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

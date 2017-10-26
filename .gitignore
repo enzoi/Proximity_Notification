@@ -1,5 +1,4 @@
 # Xcode
-#
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
@@ -27,6 +26,9 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+## Constants including API keys
+Constants.swift
 
 ## Playgrounds
 timeline.xctimeline
