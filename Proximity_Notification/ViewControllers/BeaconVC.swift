@@ -8,18 +8,39 @@
 //
 
 import UIKit
+import CoreBluetooth
 
-class BeaconVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class BeaconVC: UIViewController, CBCentralManagerDelegate {
+    
+    @IBOutlet weak var scanToggleButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    
+    var centralManager: CBCentralManager!
+    var isBluetoothPoweredOn: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        centralManager = CBCentralManager(delegate: self, queue: nil)
     }
     
-    // MARK: - Table view data source
+    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        switch (central.state) {
+        case .poweredOn:
+            isBluetoothPoweredOn = true
+            scanToggleButton.title = "Stop Scanning"
+        case .poweredOff:
+            isBluetoothPoweredOn = false
+            scanToggleButton.title = "Scan"
+        default:
+            break
+        }
+    }
+}
+
+
+// MARK: Table View
+
+extension BeaconVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -42,9 +63,7 @@ class BeaconVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // TODO: Send the Beacon Information to Detail ViewController
-    
+        
     }
-
-
 
 }

@@ -88,6 +88,8 @@
                         <barButtonItem key="rightBarButtonItem" title="Scan" id="xWr-eE-G1Z"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="ScanToggleButton" destination="xWr-eE-G1Z" id="swI-FR-QXc"/>
+                        <outlet property="scanToggleButton" destination="xWr-eE-G1Z" id="IRY-7h-poJ"/>
                         <outlet property="tableView" destination="C2d-xg-5BY" id="P8I-ve-kio"/>
                     </connections>
                 </viewController>
