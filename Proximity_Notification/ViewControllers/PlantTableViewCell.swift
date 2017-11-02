@@ -1,5 +1,5 @@
 //
-//  BeaconTableViewCell.swift
+//  PlantTableViewCell.swift
 //  Proximity_Notification
 //
 //  Created by Yeontae Kim on 10/25/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BeaconTableViewCell: UITableViewCell {
+class PlantTableViewCell: UITableViewCell {
 
     @IBOutlet weak var beaconNameLabel: UILabel!
     @IBOutlet weak var beaconLocationLabel: UILabel!

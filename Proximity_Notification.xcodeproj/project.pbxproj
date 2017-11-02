@@ -13,8 +13,15 @@
 		CF446B471FA154BA00EFAFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF446B451FA154BA00EFAFCE /* LaunchScreen.storyboard */; };
 		CF446B521FA154BA00EFAFCE /* Proximity_NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B511FA154BA00EFAFCE /* Proximity_NotificationTests.swift */; };
 		CF446B5D1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B5C1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift */; };
-		CF8DD0A71FA1B282009434C5 /* BeaconVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0A61FA1B282009434C5 /* BeaconVC.swift */; };
-		CF8DD0A91FA1BC5B009434C5 /* BeaconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0A81FA1BC5B009434C5 /* BeaconTableViewCell.swift */; };
+		CF6ABB841FAA9155008295B0 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB831FAA9155008295B0 /* WelcomeVC.swift */; };
+		CF6ABB861FAA91F9008295B0 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB851FAA91F9008295B0 /* MapVC.swift */; };
+		CF6ABB881FAA9732008295B0 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB871FAA9732008295B0 /* BeaconManager.swift */; };
+		CF6ABB8A1FAA9C91008295B0 /* PlantDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB891FAA9C91008295B0 /* PlantDetailVC.swift */; };
+		CF6ABB8C1FAA9D5C008295B0 /* SearchPlantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB8B1FAA9D5C008295B0 /* SearchPlantVC.swift */; };
+		CF6ABB8E1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift */; };
+		CF8DD0A71FA1B282009434C5 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0A61FA1B282009434C5 /* MenuTableVC.swift */; };
+		CF8DD0A91FA1BC5B009434C5 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */; };
+		CF8DD0AB1FA26D31009434C5 /* RegionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */; };
 		CFA46ECB1FA16DD700CDD8B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA46ECA1FA16DD700CDD8B2 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +55,15 @@
 		CF446B581FA154BA00EFAFCE /* Proximity_NotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proximity_NotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF446B5C1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proximity_NotificationUITests.swift; sourceTree = "<group>"; };
 		CF446B5E1FA154BA00EFAFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF8DD0A61FA1B282009434C5 /* BeaconVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconVC.swift; sourceTree = "<group>"; };
-		CF8DD0A81FA1BC5B009434C5 /* BeaconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconTableViewCell.swift; sourceTree = "<group>"; };
+		CF6ABB831FAA9155008295B0 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		CF6ABB851FAA91F9008295B0 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		CF6ABB871FAA9732008295B0 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		CF6ABB891FAA9C91008295B0 /* PlantDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailVC.swift; sourceTree = "<group>"; };
+		CF6ABB8B1FAA9D5C008295B0 /* SearchPlantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlantVC.swift; sourceTree = "<group>"; };
+		CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlantCollectionVC.swift; sourceTree = "<group>"; };
+		CF8DD0A61FA1B282009434C5 /* MenuTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
+		CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
+		CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionManager.swift; sourceTree = "<group>"; };
 		CFA46ECA1FA16DD700CDD8B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,8 +154,13 @@
 		CF446B6B1FA1552000EFAFCE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CF8DD0A61FA1B282009434C5 /* BeaconVC.swift */,
-				CF8DD0A81FA1BC5B009434C5 /* BeaconTableViewCell.swift */,
+				CF6ABB831FAA9155008295B0 /* WelcomeVC.swift */,
+				CF8DD0A61FA1B282009434C5 /* MenuTableVC.swift */,
+				CF6ABB851FAA91F9008295B0 /* MapVC.swift */,
+				CF6ABB8B1FAA9D5C008295B0 /* SearchPlantVC.swift */,
+				CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */,
+				CF6ABB891FAA9C91008295B0 /* PlantDetailVC.swift */,
+				CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -158,6 +177,8 @@
 		CF446B6D1FA1557500EFAFCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */,
+				CF6ABB871FAA9732008295B0 /* BeaconManager.swift */,
 				CF446B481FA154BA00EFAFCE /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -326,10 +347,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6ABB8A1FAA9C91008295B0 /* PlantDetailVC.swift in Sources */,
 				CF446B3D1FA154BA00EFAFCE /* AppDelegate.swift in Sources */,
-				CF8DD0A71FA1B282009434C5 /* BeaconVC.swift in Sources */,
+				CF8DD0A71FA1B282009434C5 /* MenuTableVC.swift in Sources */,
+				CF6ABB881FAA9732008295B0 /* BeaconManager.swift in Sources */,
+				CF8DD0AB1FA26D31009434C5 /* RegionManager.swift in Sources */,
 				CFA46ECB1FA16DD700CDD8B2 /* Constants.swift in Sources */,
-				CF8DD0A91FA1BC5B009434C5 /* BeaconTableViewCell.swift in Sources */,
+				CF6ABB8E1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift in Sources */,
+				CF6ABB861FAA91F9008295B0 /* MapVC.swift in Sources */,
+				CF6ABB841FAA9155008295B0 /* WelcomeVC.swift in Sources */,
+				CF6ABB8C1FAA9D5C008295B0 /* SearchPlantVC.swift in Sources */,
+				CF8DD0A91FA1BC5B009434C5 /* PlantTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
