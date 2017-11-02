@@ -19,6 +19,7 @@
 		CF6ABB8A1FAA9C91008295B0 /* PlantDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB891FAA9C91008295B0 /* PlantDetailVC.swift */; };
 		CF6ABB8C1FAA9D5C008295B0 /* SearchPlantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB8B1FAA9D5C008295B0 /* SearchPlantVC.swift */; };
 		CF6ABB8E1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift */; };
+		CF6ABB911FABA44F008295B0 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB901FABA44F008295B0 /* Plant.swift */; };
 		CF8DD0A71FA1B282009434C5 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0A61FA1B282009434C5 /* MenuTableVC.swift */; };
 		CF8DD0A91FA1BC5B009434C5 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */; };
 		CF8DD0AB1FA26D31009434C5 /* RegionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */; };
@@ -61,6 +62,7 @@
 		CF6ABB891FAA9C91008295B0 /* PlantDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailVC.swift; sourceTree = "<group>"; };
 		CF6ABB8B1FAA9D5C008295B0 /* SearchPlantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlantVC.swift; sourceTree = "<group>"; };
 		CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlantCollectionVC.swift; sourceTree = "<group>"; };
+		CF6ABB901FABA44F008295B0 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		CF8DD0A61FA1B282009434C5 /* MenuTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
 		CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
 		CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionManager.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				CFA46ECA1FA16DD700CDD8B2 /* Constants.swift */,
 				CF446B6A1FA154F900EFAFCE /* Application Delegate */,
 				CF446B6B1FA1552000EFAFCE /* ViewControllers */,
+				CF6ABB8F1FABA42C008295B0 /* Model */,
 				CF446B6C1FA1552F00EFAFCE /* Storyboards */,
 				CFA46EC81FA155BA00CDD8B2 /* Resources */,
 				CF446B6D1FA1557500EFAFCE /* Supporting Files */,
@@ -190,6 +193,14 @@
 				CF446B451FA154BA00EFAFCE /* LaunchScreen.storyboard */,
 			);
 			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		CF6ABB8F1FABA42C008295B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF6ABB901FABA44F008295B0 /* Plant.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CFA46EC81FA155BA00CDD8B2 /* Resources */ = {
@@ -348,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6ABB8A1FAA9C91008295B0 /* PlantDetailVC.swift in Sources */,
+				CF6ABB911FABA44F008295B0 /* Plant.swift in Sources */,
 				CF446B3D1FA154BA00EFAFCE /* AppDelegate.swift in Sources */,
 				CF8DD0A71FA1B282009434C5 /* MenuTableVC.swift in Sources */,
 				CF6ABB881FAA9732008295B0 /* BeaconManager.swift in Sources */,
@@ -526,6 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TVHJ8VSCRK;
 				INFOPLIST_FILE = "$(SRCROOT)/Proximity_Notification/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ytk.Proximity-Notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,6 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TVHJ8VSCRK;
 				INFOPLIST_FILE = "$(SRCROOT)/Proximity_Notification/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ytk.Proximity-Notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
