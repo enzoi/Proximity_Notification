@@ -13,6 +13,7 @@ class MapVC: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
+    var longPressGesture: UILongPressGestureRecognizer? = nil
     let regionRadius: CLLocationDistance = 1000
     
     override func viewDidLoad() {
@@ -24,17 +25,69 @@ class MapVC: UIViewController {
         
         centerMapOnLocation(location: initialLocation)
         
-        // Show plant on map
-        let plant = Plant(title: "Plant #1",
-                          plantName: "Pine Tree",
-                          coordinate: CLLocationCoordinate2D(latitude: 37.7669, longitude: -122.4716))
-        mapView.addAnnotation(plant)
+        // Set up gestures and add
+        longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(addAnnotation))
+        addLongPressGesture()
+        
+//        // Show plant on map
+//        let plant = Plant(title: "Plant #1",
+//                          plantName: "Pine Tree",
+//                          coordinate: CLLocationCoordinate2D(latitude: 37.7669, longitude: -122.4716))
+//        mapView.addAnnotation(plant)
     }
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius, regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    // Fetch all saved pins with annotation
+    
+    func fetchAllPins() {
+        
+        mapView.delegate = self
+        
+        // TODO: Get pins from Firebase
+        
+    }
+    
+    // MARK: Save Pin when created by gesture
+    
+    func savePin(latitude: Double, longitude: Double) {
+        
+        mapView.delegate = self
+        
+        // TODO: Save pin to Firebase
+        
+    }
+    
+    @objc func addAnnotation(gestureRecognizer:UIGestureRecognizer){
+        
+        self.mapView.delegate = self
+        
+        if gestureRecognizer.state == .began {
+            
+            let touchPoint = gestureRecognizer.location(in: mapView)
+            let newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
+            
+            let lat = newCoordinates.latitude
+            let lon = newCoordinates.longitude
+            
+            let pin = MKPointAnnotation()
+            pin.coordinate = newCoordinates
+            
+            self.mapView.addAnnotation(pin)
+            
+            print("latitude: \(lat), longitude: \(lon)")
+            // savePin(latitude: lat, longitude: lon)
+            
+        }
+    }
+    
+    func addLongPressGesture() {
+        self.longPressGesture?.minimumPressDuration = 0.5
+        self.mapView.addGestureRecognizer(self.longPressGesture!)
     }
 
 }
