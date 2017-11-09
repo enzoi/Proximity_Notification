@@ -6,20 +6,24 @@
 //  Copyright © 2017 YTK. All rights reserved.
 //
 
-import Foundation
 import MapKit
 
-class Plant: NSObject, MKAnnotation {
-    let title: String?
-    let plantName: String
+struct Plant {
+    
+    let scientificName: String
+    let commonName: String
+    let photos: Photo
     let coordinate: CLLocationCoordinate2D
+    let pin: MKAnnotation?
+
+}
+
+extension Plant {
     
     init(title: String, plantName: String, coordinate: CLLocationCoordinate2D) {
-        self.title = title
         self.plantName = plantName
         self.coordinate = coordinate
-        
-        super.init()
+        self.pin = nil
     }
     
     var subtitle: String? {

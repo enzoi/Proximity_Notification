@@ -13,12 +13,16 @@
 		CF446B471FA154BA00EFAFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF446B451FA154BA00EFAFCE /* LaunchScreen.storyboard */; };
 		CF446B521FA154BA00EFAFCE /* Proximity_NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B511FA154BA00EFAFCE /* Proximity_NotificationTests.swift */; };
 		CF446B5D1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B5C1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift */; };
+		CF557C191FB3D73C008AB5EB /* PlantStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF557C181FB3D73C008AB5EB /* PlantStore.swift */; };
+		CF557C1C1FB3D764008AB5EB /* Contentful.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF557C1B1FB3D764008AB5EB /* Contentful.swift */; };
+		CF557C1E1FB3D837008AB5EB /* FavoritePlantDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF557C1D1FB3D837008AB5EB /* FavoritePlantDataSource.swift */; };
+		CF5D941C1FB2736000B64DA3 /* PlantDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D941B1FB2736000B64DA3 /* PlantDataSource.swift */; };
 		CF6ABB841FAA9155008295B0 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB831FAA9155008295B0 /* WelcomeVC.swift */; };
 		CF6ABB861FAA91F9008295B0 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB851FAA91F9008295B0 /* MapVC.swift */; };
 		CF6ABB881FAA9732008295B0 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB871FAA9732008295B0 /* BeaconManager.swift */; };
 		CF6ABB8A1FAA9C91008295B0 /* PlantDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB891FAA9C91008295B0 /* PlantDetailVC.swift */; };
 		CF6ABB8C1FAA9D5C008295B0 /* SearchPlantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB8B1FAA9D5C008295B0 /* SearchPlantVC.swift */; };
-		CF6ABB8E1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift */; };
+		CF6ABB8E1FAA9DBC008295B0 /* FavoritePlantTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantTableVC.swift */; };
 		CF6ABB911FABA44F008295B0 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB901FABA44F008295B0 /* Plant.swift */; };
 		CF8DD0A71FA1B282009434C5 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0A61FA1B282009434C5 /* MenuTableVC.swift */; };
 		CF8DD0A91FA1BC5B009434C5 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */; };
@@ -56,16 +60,20 @@
 		CF446B581FA154BA00EFAFCE /* Proximity_NotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proximity_NotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF446B5C1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proximity_NotificationUITests.swift; sourceTree = "<group>"; };
 		CF446B5E1FA154BA00EFAFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF557C181FB3D73C008AB5EB /* PlantStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantStore.swift; sourceTree = "<group>"; };
+		CF557C1B1FB3D764008AB5EB /* Contentful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contentful.swift; sourceTree = "<group>"; };
+		CF557C1D1FB3D837008AB5EB /* FavoritePlantDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlantDataSource.swift; sourceTree = "<group>"; };
+		CF5D941B1FB2736000B64DA3 /* PlantDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDataSource.swift; sourceTree = "<group>"; };
 		CF6ABB831FAA9155008295B0 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		CF6ABB851FAA91F9008295B0 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		CF6ABB871FAA9732008295B0 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
 		CF6ABB891FAA9C91008295B0 /* PlantDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailVC.swift; sourceTree = "<group>"; };
 		CF6ABB8B1FAA9D5C008295B0 /* SearchPlantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlantVC.swift; sourceTree = "<group>"; };
-		CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlantCollectionVC.swift; sourceTree = "<group>"; };
+		CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlantTableVC.swift; sourceTree = "<group>"; };
 		CF6ABB901FABA44F008295B0 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		CF8DD0A61FA1B282009434C5 /* MenuTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
 		CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
-		CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionManager.swift; sourceTree = "<group>"; };
+		CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegionManager.swift; path = "../Supporting Files/RegionManager.swift"; sourceTree = "<group>"; };
 		CFA46ECA1FA16DD700CDD8B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,8 +127,9 @@
 			children = (
 				CFA46ECA1FA16DD700CDD8B2 /* Constants.swift */,
 				CF446B6A1FA154F900EFAFCE /* Application Delegate */,
-				CF446B6B1FA1552000EFAFCE /* ViewControllers */,
 				CF6ABB8F1FABA42C008295B0 /* Model */,
+				CF446B6B1FA1552000EFAFCE /* ViewControllers */,
+				CF557C1F1FB3DB2F008AB5EB /* Extensions */,
 				CF446B6C1FA1552F00EFAFCE /* Storyboards */,
 				CFA46EC81FA155BA00CDD8B2 /* Resources */,
 				CF446B6D1FA1557500EFAFCE /* Supporting Files */,
@@ -163,7 +172,7 @@
 				CF6ABB8B1FAA9D5C008295B0 /* SearchPlantVC.swift */,
 				CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */,
 				CF6ABB891FAA9C91008295B0 /* PlantDetailVC.swift */,
-				CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift */,
+				CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantTableVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -180,7 +189,6 @@
 		CF446B6D1FA1557500EFAFCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */,
 				CF6ABB871FAA9732008295B0 /* BeaconManager.swift */,
 				CF446B481FA154BA00EFAFCE /* Info.plist */,
 			);
@@ -195,10 +203,30 @@
 			path = "Launch Screen";
 			sourceTree = "<group>";
 		};
+		CF557C1A1FB3D745008AB5EB /* Web API */ = {
+			isa = PBXGroup;
+			children = (
+				CF557C1B1FB3D764008AB5EB /* Contentful.swift */,
+			);
+			path = "Web API";
+			sourceTree = "<group>";
+		};
+		CF557C1F1FB3DB2F008AB5EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CF6ABB8F1FABA42C008295B0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF557C1A1FB3D745008AB5EB /* Web API */,
 				CF6ABB901FABA44F008295B0 /* Plant.swift */,
+				CF5D941B1FB2736000B64DA3 /* PlantDataSource.swift */,
+				CF557C1D1FB3D837008AB5EB /* FavoritePlantDataSource.swift */,
+				CF557C181FB3D73C008AB5EB /* PlantStore.swift */,
+				CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -359,13 +387,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6ABB8A1FAA9C91008295B0 /* PlantDetailVC.swift in Sources */,
+				CF557C191FB3D73C008AB5EB /* PlantStore.swift in Sources */,
+				CF557C1E1FB3D837008AB5EB /* FavoritePlantDataSource.swift in Sources */,
 				CF6ABB911FABA44F008295B0 /* Plant.swift in Sources */,
+				CF5D941C1FB2736000B64DA3 /* PlantDataSource.swift in Sources */,
 				CF446B3D1FA154BA00EFAFCE /* AppDelegate.swift in Sources */,
 				CF8DD0A71FA1B282009434C5 /* MenuTableVC.swift in Sources */,
 				CF6ABB881FAA9732008295B0 /* BeaconManager.swift in Sources */,
 				CF8DD0AB1FA26D31009434C5 /* RegionManager.swift in Sources */,
 				CFA46ECB1FA16DD700CDD8B2 /* Constants.swift in Sources */,
-				CF6ABB8E1FAA9DBC008295B0 /* FavoritePlantCollectionVC.swift in Sources */,
+				CF6ABB8E1FAA9DBC008295B0 /* FavoritePlantTableVC.swift in Sources */,
+				CF557C1C1FB3D764008AB5EB /* Contentful.swift in Sources */,
 				CF6ABB861FAA91F9008295B0 /* MapVC.swift in Sources */,
 				CF6ABB841FAA9155008295B0 /* WelcomeVC.swift in Sources */,
 				CF6ABB8C1FAA9D5C008295B0 /* SearchPlantVC.swift in Sources */,

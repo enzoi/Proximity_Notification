@@ -10,18 +10,26 @@ import UIKit
 
 class PlantTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var beaconNameLabel: UILabel!
-    @IBOutlet weak var beaconLocationLabel: UILabel!
+    @IBOutlet fileprivate weak var plantLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var model: Model? {
+        didSet {
+            guard let model = model else {
+                return
+            }
+            plantLabel.text = model.name
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
+
+extension PlantTableViewCell {
+    struct Model {
+        let name: String
+        
+        init(plant: Plant, index: Int) {
+            name = plant.plantName
+
+        }
+    }
+}
+
