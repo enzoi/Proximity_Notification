@@ -12,6 +12,10 @@ private let reuseIdentifier = "Cell"
 
 class FavoritePlantTableVC: UITableViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var scientificNameLabel: UILabel!
+    @IBOutlet weak var commonNameLabel: UILabel!
+    
     // implement card view
 
 }

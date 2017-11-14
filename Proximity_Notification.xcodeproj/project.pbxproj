@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CF446B3D1FA154BA00EFAFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B3C1FA154BA00EFAFCE /* AppDelegate.swift */; };
 		CF446B421FA154BA00EFAFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF446B401FA154BA00EFAFCE /* Main.storyboard */; };
-		CF446B441FA154BA00EFAFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF446B431FA154BA00EFAFCE /* Assets.xcassets */; };
 		CF446B471FA154BA00EFAFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF446B451FA154BA00EFAFCE /* LaunchScreen.storyboard */; };
 		CF446B521FA154BA00EFAFCE /* Proximity_NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B511FA154BA00EFAFCE /* Proximity_NotificationTests.swift */; };
 		CF446B5D1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF446B5C1FA154BA00EFAFCE /* Proximity_NotificationUITests.swift */; };
@@ -24,9 +23,14 @@
 		CF6ABB8C1FAA9D5C008295B0 /* SearchPlantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB8B1FAA9D5C008295B0 /* SearchPlantVC.swift */; };
 		CF6ABB8E1FAA9DBC008295B0 /* FavoritePlantTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantTableVC.swift */; };
 		CF6ABB911FABA44F008295B0 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6ABB901FABA44F008295B0 /* Plant.swift */; };
+		CF78B80B1FBA320F00F16006 /* icons8-heart-outline-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = CF78B8091FBA320F00F16006 /* icons8-heart-outline-filled.png */; };
+		CF78B80C1FBA320F00F16006 /* icons8-heart-outline.png in Resources */ = {isa = PBXBuildFile; fileRef = CF78B80A1FBA320F00F16006 /* icons8-heart-outline.png */; };
+		CF78B80E1FBAC62700F16006 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B80D1FBAC62700F16006 /* CoreDataStack.swift */; };
+		CF78B8101FBAD08F00F16006 /* FavoritePlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B80F1FBAD08F00F16006 /* FavoritePlantTableViewCell.swift */; };
 		CF8DD0A71FA1B282009434C5 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0A61FA1B282009434C5 /* MenuTableVC.swift */; };
 		CF8DD0A91FA1BC5B009434C5 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */; };
 		CF8DD0AB1FA26D31009434C5 /* RegionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */; };
+		CF8EE99E1FB5056A009FE76F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EE99D1FB5056A009FE76F /* NetworkManager.swift */; };
 		CFA46ECB1FA16DD700CDD8B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA46ECA1FA16DD700CDD8B2 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +55,6 @@
 		CF446B391FA154BA00EFAFCE /* Proximity_Notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proximity_Notification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF446B3C1FA154BA00EFAFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF446B411FA154BA00EFAFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CF446B431FA154BA00EFAFCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF446B461FA154BA00EFAFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF446B481FA154BA00EFAFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF446B4D1FA154BA00EFAFCE /* Proximity_NotificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proximity_NotificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,9 +74,14 @@
 		CF6ABB8B1FAA9D5C008295B0 /* SearchPlantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlantVC.swift; sourceTree = "<group>"; };
 		CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlantTableVC.swift; sourceTree = "<group>"; };
 		CF6ABB901FABA44F008295B0 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		CF78B8091FBA320F00F16006 /* icons8-heart-outline-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-heart-outline-filled.png"; sourceTree = "<group>"; };
+		CF78B80A1FBA320F00F16006 /* icons8-heart-outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-heart-outline.png"; sourceTree = "<group>"; };
+		CF78B80D1FBAC62700F16006 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		CF78B80F1FBAD08F00F16006 /* FavoritePlantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePlantTableViewCell.swift; sourceTree = "<group>"; };
 		CF8DD0A61FA1B282009434C5 /* MenuTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
 		CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
 		CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegionManager.swift; path = "../Supporting Files/RegionManager.swift"; sourceTree = "<group>"; };
+		CF8EE99D1FB5056A009FE76F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CFA46ECA1FA16DD700CDD8B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +181,7 @@
 				CF8DD0A81FA1BC5B009434C5 /* PlantTableViewCell.swift */,
 				CF6ABB891FAA9C91008295B0 /* PlantDetailVC.swift */,
 				CF6ABB8D1FAA9DBC008295B0 /* FavoritePlantTableVC.swift */,
+				CF78B80F1FBAD08F00F16006 /* FavoritePlantTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,8 +233,10 @@
 				CF557C1A1FB3D745008AB5EB /* Web API */,
 				CF6ABB901FABA44F008295B0 /* Plant.swift */,
 				CF5D941B1FB2736000B64DA3 /* PlantDataSource.swift */,
+				CF78B80D1FBAC62700F16006 /* CoreDataStack.swift */,
 				CF557C1D1FB3D837008AB5EB /* FavoritePlantDataSource.swift */,
 				CF557C181FB3D73C008AB5EB /* PlantStore.swift */,
+				CF8EE99D1FB5056A009FE76F /* NetworkManager.swift */,
 				CF8DD0AA1FA26D31009434C5 /* RegionManager.swift */,
 			);
 			path = Model;
@@ -242,7 +253,8 @@
 		CFA46EC91FA155CA00CDD8B2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				CF446B431FA154BA00EFAFCE /* Assets.xcassets */,
+				CF78B8091FBA320F00F16006 /* icons8-heart-outline-filled.png */,
+				CF78B80A1FBA320F00F16006 /* icons8-heart-outline.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -360,8 +372,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF446B471FA154BA00EFAFCE /* LaunchScreen.storyboard in Resources */,
-				CF446B441FA154BA00EFAFCE /* Assets.xcassets in Resources */,
+				CF78B80C1FBA320F00F16006 /* icons8-heart-outline.png in Resources */,
 				CF446B421FA154BA00EFAFCE /* Main.storyboard in Resources */,
+				CF78B80B1FBA320F00F16006 /* icons8-heart-outline-filled.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,13 +402,16 @@
 				CF6ABB8A1FAA9C91008295B0 /* PlantDetailVC.swift in Sources */,
 				CF557C191FB3D73C008AB5EB /* PlantStore.swift in Sources */,
 				CF557C1E1FB3D837008AB5EB /* FavoritePlantDataSource.swift in Sources */,
+				CF78B80E1FBAC62700F16006 /* CoreDataStack.swift in Sources */,
 				CF6ABB911FABA44F008295B0 /* Plant.swift in Sources */,
 				CF5D941C1FB2736000B64DA3 /* PlantDataSource.swift in Sources */,
 				CF446B3D1FA154BA00EFAFCE /* AppDelegate.swift in Sources */,
 				CF8DD0A71FA1B282009434C5 /* MenuTableVC.swift in Sources */,
+				CF78B8101FBAD08F00F16006 /* FavoritePlantTableViewCell.swift in Sources */,
 				CF6ABB881FAA9732008295B0 /* BeaconManager.swift in Sources */,
 				CF8DD0AB1FA26D31009434C5 /* RegionManager.swift in Sources */,
 				CFA46ECB1FA16DD700CDD8B2 /* Constants.swift in Sources */,
+				CF8EE99E1FB5056A009FE76F /* NetworkManager.swift in Sources */,
 				CF6ABB8E1FAA9DBC008295B0 /* FavoritePlantTableVC.swift in Sources */,
 				CF557C1C1FB3D764008AB5EB /* Contentful.swift in Sources */,
 				CF6ABB861FAA91F9008295B0 /* MapVC.swift in Sources */,
@@ -574,8 +590,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ytk.Proximity-Notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -590,8 +606,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ytk.Proximity-Notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -603,6 +619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TVHJ8VSCRK;
 				INFOPLIST_FILE = Proximity_NotificationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ytk.Proximity-NotificationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -620,6 +637,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TVHJ8VSCRK;
 				INFOPLIST_FILE = Proximity_NotificationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ytk.Proximity-NotificationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,6 +654,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TVHJ8VSCRK;
 				INFOPLIST_FILE = Proximity_NotificationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ytk.Proximity-NotificationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -652,6 +671,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TVHJ8VSCRK;
 				INFOPLIST_FILE = Proximity_NotificationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ytk.Proximity-NotificationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

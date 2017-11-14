@@ -10,24 +10,29 @@ import UIKit
 
 class PlantTableViewCell: UITableViewCell {
 
+
+    @IBOutlet weak var plantImagemageView: UIImageView!
     @IBOutlet fileprivate weak var plantLabel: UILabel!
+    @IBOutlet weak var commonName: UILabel!
     
     var model: Model? {
         didSet {
             guard let model = model else {
                 return
             }
-            plantLabel.text = model.name
+            plantLabel.text = model.scientificName
         }
     }
 }
 
 extension PlantTableViewCell {
     struct Model {
-        let name: String
+        let scientificName: String
+        let commonName: String
         
         init(plant: Plant, index: Int) {
-            name = plant.plantName
+            self.scientificName = plant.scientificName
+            self.commonName = plant.commonName
 
         }
     }

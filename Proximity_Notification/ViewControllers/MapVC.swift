@@ -29,11 +29,6 @@ class MapVC: UIViewController {
         longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(addAnnotation))
         addLongPressGesture()
         
-//        // Show plant on map
-//        let plant = Plant(title: "Plant #1",
-//                          plantName: "Pine Tree",
-//                          coordinate: CLLocationCoordinate2D(latitude: 37.7669, longitude: -122.4716))
-//        mapView.addAnnotation(plant)
     }
     
     func centerMapOnLocation(location: CLLocation) {

@@ -7,26 +7,43 @@
 //
 
 import MapKit
+import CoreLocation
 
-struct Plant {
-    
-    let scientificName: String
-    let commonName: String
-    let photos: Photo
-    let coordinate: CLLocationCoordinate2D
-    let pin: MKAnnotation?
-
+enum LeafCategory: String {
+    case evergreen
+    case deciduous
 }
 
-extension Plant {
+enum PlantTypeCategory: String {
+    case tree
+    case shrub
+    case groundcover
+}
+
+class Plant: NSObject, MKAnnotation {
     
-    init(title: String, plantName: String, coordinate: CLLocationCoordinate2D) {
-        self.plantName = plantName
+    let title: String?
+    let scientificName: String
+    let commonName: String
+    let plantType: PlantTypeCategory
+    let leafType: LeafCategory
+    let coordinate: CLLocationCoordinate2D
+    let pin: MKAnnotation?
+    
+    init(scientificName: String, commonName: String, plantType: PlantTypeCategory, leafType: LeafCategory, coordinate: CLLocationCoordinate2D) {
+        
+        self.title = scientificName
+        self.scientificName = scientificName
+        self.commonName = commonName
+        self.plantType = plantType
+        self.leafType = leafType
         self.coordinate = coordinate
         self.pin = nil
+        
+        super.init()
     }
     
     var subtitle: String? {
-        return plantName
+        return commonName
     }
 }
